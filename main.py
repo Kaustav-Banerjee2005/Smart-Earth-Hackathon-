@@ -1,5 +1,8 @@
 import time
 from typing import List
+from dotenv import load_dotenv  # <-- Add this first
+load_dotenv()  # <-- Force load the variables right here!
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException, status
 from pydantic import BaseModel
 from config import supabase
