@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "RescueApp",
+    "slug": "rescue-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": { "backgroundColor": "#0d1422" },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "VIBRATE",
+        "RECORD_AUDIO"
+      ],
+      "adaptiveIcon": { "backgroundColor": "#0d1422" }
+    },
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Used to send your GPS coordinates with your SOS alert.",
+        "NSLocationAlwaysUsageDescription": "Used to share your location with family members during emergencies.",
+        "NSSpeechRecognitionUsageDescription": "Used to detect voice SOS trigger.",
+        "NSMicrophoneUsageDescription": "Used for voice-activated SOS."
+      }
+    },
+    "plugins": [
+      ["expo-location", { "locationAlwaysAndWhenInUsePermission": "Allow RescueApp to use your location during emergencies." }]
+    ]
+  }
+}
