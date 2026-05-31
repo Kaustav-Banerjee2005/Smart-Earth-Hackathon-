@@ -3,6 +3,14 @@ AI-powered disaster survival & rescue coordination
 **Person 2 (Mobile / Victim side)** — built to match the FastAPI backend exactly.
 
 ---
+## setup
+create folder called src 
+create folders in src folder:
+1. context: add file UserContext.js
+2. hooks: useWebSocket.js
+3. screens: FamilyScreen.js , HomeScreen.js, ProfileScreen.js, ShelterScreen.js, StatusScreen.js
+4. services: api.js, offlineManager.js
+5. {screens,componenets,services,hooks,utils,context}
 
 ## Quick start
 
